@@ -14,16 +14,16 @@ function App() {
   }, []);
 
   return (
-    <>
-      <div className="p-3 bg-red-800 "> Hi </div>
-      <div>
-        {proverbs.map((proverb) => (
-            <div key={proverb.id} className="p-3 border-black border-2 text-xl rounded-lg">
+    <div>
+      <div className="h-20 mb-3 p-3 rounded-b-lg bg-[#bad7f2]">Hi</div>
+      <div className="pl-10">
+        {proverbs.map((proverb, index) => (
+            <div key={proverb.id} className={`bg-[#D0CFEC] shadow-lg p-2 m-2 border-slate-300 h-20 cursor-pointer hover:scale-95 hover:border-black transition-transform border-2 rounded-lg w-1/2`}>
             {proverb.title}
         </div>
         ))}
      </div>
-    </>
+    </div>
   );
 }
 
